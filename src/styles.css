@@ -57,7 +57,6 @@ input {
   font-size: 14px;
   border-radius: 2px;
   padding: 8px;
-  margin-bottom: 16px;
   border: 1px solid #BDBDBD;
 }
 
@@ -65,6 +64,7 @@ label {
   font-size: 12px;
   font-weight: bold;
   margin-bottom: 4px;
+  margin-top: 16px;
   display: block;
   text-transform: uppercase;
 }
@@ -90,6 +90,10 @@ label {
 .button:disabled, button:disabled {
   opacity: 0.5;
   cursor: auto;
+}
+
+.purchase {
+  margin-top: 16px;
 }
 
 /* Fancy Button */
@@ -137,6 +141,9 @@ app-top-bar h1 {
   background-color: #EEEEEE;
 }
 
+.validator{
+  color: red;
+}
 
 /*
 Copyright Google LLC. All Rights Reserved.

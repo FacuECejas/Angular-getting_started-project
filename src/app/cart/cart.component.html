@@ -15,6 +15,8 @@
             Name
         </label>
         <input id="name" type="text" formControlName="name"/>
+        <div class="validator" *ngIf="hasErrors('name', 'required')">Required field</div>
+        <div class="validator" *ngIf="hasErrors('name', 'minlength')">At leas 3 characters required</div>
     </div>
 
     <div>
@@ -22,7 +24,9 @@
             Address
         </label>
         <input id="address" type="text" formControlName="address"/>
+        <div class="validator" *ngIf="hasErrors('address', 'email')">Invalid email address</div>
+        <div class="validator" *ngIf="hasErrors('address', 'required')">Required field</div>
     </div>
 
-    <button class="button" type="submit">Purchase</button>
+    <button class="button purchase" type="submit">Purchase</button>
 </form>
